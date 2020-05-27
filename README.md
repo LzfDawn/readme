@@ -54,11 +54,12 @@ npm run dev
    前面的Filter里面还有一个逻辑，就是如果用户这次的token校验通过后，我们还会顺便看看token要不要刷新，如果需要刷新则将新的token放到header里面。
    这样做的目的是防止token丢了之后，别人可以拿着一直用。我们这里是固定时间刷新。安全性要求更高的系统可能每次请求都要求刷新，或者是每次POST，PUT等修改数据的请求后必须刷新。
     <br/><br/>
- 4、流程图
+ 4、项目展示图
   <br/>
-  <p align="center">
-   <img width="600" src="http://upload-images.jianshu.io/upload_images/13282795-0e7d8ee5d4af35e3.png">
- </p>
+   <p align="center">
+   <img width="600" src="http://49.232.110.29/1.png">
+   <img width="600" src="http://49.232.110.29/4.png">
+   </p>
  <br/><br/>
 5、后端权限：
   在UserController接口具体逻辑getUser()实现
