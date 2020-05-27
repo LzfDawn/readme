@@ -34,12 +34,6 @@ npm install --registry=https://registry.npm.taobao.org
 npm run dev
 
 
-
-
- <p align="center">
-  <img width="900" src="https://wpimg.wallstcn.com/a5894c1b-f6af-456e-82df-1151da0839bf.png">
-</p>
-
 ## 开发
 一：
 <strong>权限
@@ -57,9 +51,14 @@ npm run dev
  4、项目展示图
   <br/>
    <p align="center">
-   <img width="600" src="http://49.232.110.29/1.png">
-   <img width="600" src="http://49.232.110.29/4.png">
+   <img width="900" src="http://49.232.110.29/1.png">
    </p>
+    <p align="center">
+      <img width="900" src="http://49.232.110.29/1.png">
+    </p>
+    <p align="center">
+          <img width="900" src="http://49.232.110.29/5.png">
+    </p>
  <br/><br/>
 5、后端权限：
   在UserController接口具体逻辑getUser()实现
@@ -68,41 +67,15 @@ npm run dev
   <br/>
 5、开发工具 idea 版本在2019.2.1以上：
 
-## 前端目录结构
-
-├── build                      # 构建相关
-├── mock                       # 项目mock 模拟数据
-├── plop-templates             # 基本模板
-├── public                     # 静态资源
-│   │── favicon.ico            # favicon图标
-│   └── index.html             # html模板
-├── src                        # 源代码
-│   ├── api                    # 所有请求
-│   ├── assets                 # 主题 字体等静态资源
-│   ├── components             # 全局公用组件
-│   ├── directive              # 全局指令
-│   ├── filters                # 全局 filter
-│   ├── icons                  # 项目所有 svg icons
-│   ├── lang                   # 国际化 language
-│   ├── layout                 # 全局 layout
-│   ├── router                 # 路由
-│   ├── store                  # 全局 store管理
-│   ├── styles                 # 全局样式
-│   ├── utils                  # 全局公用方法
-│   ├── vendor                 # 公用vendor
-│   ├── views                  # views 所有页面
-│   ├── App.vue                # 入口页面
-│   ├── main.js                # 入口文件 加载组件 初始化等
-│   └── permission.js          # 权限管理
-├── tests                      # 测试
-├── .env.xxx                   # 环境变量配置
-├── .eslintrc.js               # eslint 配置项
-├── .babelrc                   # babel-loader 配置
-├── .travis.yml                # 自动化CI配置
-├── vue.config.js              # vue-cli 配置
-├── postcss.config.js          # postcss 配置
-└── package.json               # package.json
-
+## 项目目录结构
+-前端
+<p align="center">
+          <img width="900" src="http://49.232.110.29/6.png">
+</p>
+-后端
+<p align="center">
+          <img width="900" src="http://49.232.110.29/7.png">
+</p>
 ## 前端目录结构
 安装依赖
 npm install
