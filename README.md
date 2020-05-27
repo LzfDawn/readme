@@ -5,11 +5,8 @@
 
 ## 简介（最佳前后端分离式动态权限路由解决方案）
 
-[vue-element-admin](http://panjiachen.github.io/vue-element-admin) 是一个后台集成解决方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了 i18 国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。相信不管你的需求是什么，本项目都能帮助到你。
+[vue-element]是一个后台集成解决方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了 i18 国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。相信不管你的需求是什么，本项目都能帮助到你。
 
-- [在线访问](http://panjiachen.github.io/vue-element-admin)
-
-- [使用文档](https://panjiachen.github.io/vue-element-admin-site/zh/)
 - [本项目实现了路由动态加载，服务器无状态性，后端可根据实际刷新token鉴权]
 - [相关细粒度按钮级别权限建议使用指令方式实现，本项目中暂时没有设计]
 - [相关权限表设计可找我获取]
@@ -70,6 +67,55 @@ npm run dev
   <br/>
 5、开发工具 idea 版本在2019.2.1以上：
 
+## 前端目录结构
+
+├── build                      # 构建相关
+├── mock                       # 项目mock 模拟数据
+├── plop-templates             # 基本模板
+├── public                     # 静态资源
+│   │── favicon.ico            # favicon图标
+│   └── index.html             # html模板
+├── src                        # 源代码
+│   ├── api                    # 所有请求
+│   ├── assets                 # 主题 字体等静态资源
+│   ├── components             # 全局公用组件
+│   ├── directive              # 全局指令
+│   ├── filters                # 全局 filter
+│   ├── icons                  # 项目所有 svg icons
+│   ├── lang                   # 国际化 language
+│   ├── layout                 # 全局 layout
+│   ├── router                 # 路由
+│   ├── store                  # 全局 store管理
+│   ├── styles                 # 全局样式
+│   ├── utils                  # 全局公用方法
+│   ├── vendor                 # 公用vendor
+│   ├── views                  # views 所有页面
+│   ├── App.vue                # 入口页面
+│   ├── main.js                # 入口文件 加载组件 初始化等
+│   └── permission.js          # 权限管理
+├── tests                      # 测试
+├── .env.xxx                   # 环境变量配置
+├── .eslintrc.js               # eslint 配置项
+├── .babelrc                   # babel-loader 配置
+├── .travis.yml                # 自动化CI配置
+├── vue.config.js              # vue-cli 配置
+├── postcss.config.js          # postcss 配置
+└── package.json               # package.json
+
+## 前端目录结构
+安装依赖
+npm install
+
+ 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
+
+本地开发 启动项目
+npm run dev
+
+## 打包
+-前端项目guarantee_loan_foreground 打包上线：npm run build:prod
+-会生成dist文件夹，里面是打包压缩好的文件。
+-后端项目正式环境打包mvn clean package -P prod 
   
 ## 
 <br/><br/>
